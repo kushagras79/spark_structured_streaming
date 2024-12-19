@@ -1,0 +1,2 @@
+﻿value
+"Apache Spark is an open-source unified analytics engine for big data processing, with built-in modules for streaming, SQL, machine learning, and graph processing. Spark can handle batch and real-time data, and it is widely used for processing large-scale data in a distributed manner. It provides APIs in Java, Scala, Python, and R, and supports SQL queries, streaming data, and machine learning algorithms. The Spark framework allows for scalable, fast, and flexible data processing, making it a popular choice for data engineers and data scientists."
