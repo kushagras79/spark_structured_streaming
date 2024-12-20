@@ -7,7 +7,7 @@ spark = SparkSession.builder.appName('Streaming').getOrCreate()
 
 words = spark.readStream.format('socket'). \
     option('host', 'localhost'). \
-    option('port', '9982'). \
+    option('port', '9983'). \
     load()
 
 words.printSchema()
