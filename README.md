@@ -18,3 +18,14 @@ Update:- This mode will output only the new/updated data. It will not show the d
 
 Append:- This mode will output only the new record added in the micro batch. It does not update the existing records because of which it doesnot work with streaming aggregation.
 
+
+Triggers defines the timing of streaming data processing.
+
+Different trigger mode:- 
+* Unspecified
+* fixed interval
+* available now
+
+1. Unspecified :- When in write stream no other triggers are specified. It is set by default.
+2. fixedInterval:- In this our streaming application will wait for specified time duration and then re run the application. In the scenario were one of the batch is running for the long time then next batch will only run after previous run is over.
+3. available now;- In this type of trigger spark application stops after a batch is completed.It does not wait for next set of records to come.
