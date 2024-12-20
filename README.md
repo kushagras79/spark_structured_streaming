@@ -29,3 +29,17 @@ Different trigger mode:-
 1. Unspecified :- When in write stream no other triggers are specified. It is set by default.
 2. fixedInterval:- In this our streaming application will wait for specified time duration and then re run the application. In the scenario were one of the batch is running for the long time then next batch will only run after previous run is over.
 3. available now;- In this type of trigger spark application stops after a batch is completed.It does not wait for next set of records to come.
+
+
+Aggregation in spark streaming is of 2 types:- 
+1. Continuous aggregation i.e there is no time limit on the aggregation. all the aggregation will happened from start to end.
+2. Time bound aggregation i.e. there is a fixed time limit on the aggregation for the data.
+
+there is 2 type of time bound(window) aggregation 
+1. Tumbling window :- Fixed width non overlapping window of time frame
+ eg 11:00 => 11:15
+    11:15 => 11:20
+2. Sliding window:- Fixed width overlapping window of time frame
+eg 11:00 => 11:15
+    11:05 => 11:20
+    11:10 => 11:25
